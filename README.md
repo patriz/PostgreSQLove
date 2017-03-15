@@ -16,3 +16,11 @@ My research on PostgreSQL
 - [Why Uber Engineering Switched from Postgres to MySQL](https://www.reddit.com/r/programming/comments/4uph84/why_uber_engineering_switched_from_postgres_to/)
 - [반론](https://www.reddit.com/r/programming/comments/4uph84/why_uber_engineering_switched_from_postgres_to/d5rpg3w)
 - [Amazon RDS for PostgreSQL - PGConf 2016](https://www.youtube.com/watch?v=S0WvcQULeVQ]), ([slide](https://www.slideshare.net/GrantMcAlister/amazon-rds-for-postgresql-pgconf-2016))
+
+## Clients
+- pgAdmin [3](https://www.postgresql.org/ftp/pgadmin3/), [4](https://www.pgadmin.org/)
+- [postico](https://eggerapps.at/postico/) - Excellent! (Mac only)
+- [dbeaver](http://dbeaver.jkiss.org/) - Good
+- [Tadpole DB Hub](https://github.com/hangum/TadpoleForDBTools) - Good, Freeware
+- [HeidiSQL](https://www.heidisql.com/) - Experimental
+- [Navicat](https://www.navicat.com/) - Commercial
