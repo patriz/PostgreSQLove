@@ -22,5 +22,5 @@ My research on PostgreSQL
 - [postico](https://eggerapps.at/postico/) - Excellent! (Mac only)
 - [dbeaver](http://dbeaver.jkiss.org/) - Good
 - [Tadpole DB Hub](https://github.com/hangum/TadpoleForDBTools) - Good, Freeware
-- [HeidiSQL](https://www.heidisql.com/) - Experimental
+- [HeidiSQL](https://www.heidisql.com/) - Experimental (but, Excellent for MySQL)
 - [Navicat](https://www.navicat.com/) - Commercial
