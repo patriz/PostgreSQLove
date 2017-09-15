@@ -29,7 +29,8 @@
 ## Books
 - [High Performance MySQL: Optimization, Backups, and Replication 3rd Edition](https://www.amazon.com/High-Performance-MySQL-Optimization-Replication/dp/1449314287)
 
-## Clients
+## Clients & Tools
+- [SQLCheck](https://github.com/jarulraj/sqlcheck)
 - pgAdmin [3](https://www.postgresql.org/ftp/pgadmin3/), [4](https://www.pgadmin.org/)
 - [postico](https://eggerapps.at/postico/) - Excellent! (Mac only)
 - [dbeaver](http://dbeaver.jkiss.org/) - Good
