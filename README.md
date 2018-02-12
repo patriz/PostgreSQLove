@@ -18,6 +18,9 @@
 - [17 Key MySQL Config File Settings (MySQL 5.7 Proof)](http://www.speedemy.com/17-key-mysql-config-file-settings-mysql-5-7-proof/)
 - [MySQL Configuration Tuning Handbook](http://www.speedemy.com/mysql-configuration-tuning-handbook/)
 - [AWS RDS MySQL parameter group tweaks](https://gist.github.com/magnetikonline/01d9542a4d9e90472839) (2014.05)
+- [Will OPTIMIZE TABLE have any impact on my data?](https://dba.stackexchange.com/questions/40769/will-optimize-table-have-any-impact-on-my-data)
+- [How to Optimize MySQL Tables and Defragment to Recover Space](https://www.thegeekstuff.com/2016/04/mysql-optimize-table/)
+- [How to Optimize MySQL: Indexes, Slow Queries, Configuration](https://www.sitepoint.com/optimize-mysql-indexes-slow-queries-configuration/)
 
 ## Links
 - http://sqlzoo.net/
