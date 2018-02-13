@@ -40,3 +40,4 @@
 - [Tadpole DB Hub](https://github.com/hangum/TadpoleForDBTools) - Good, Freeware
 - [HeidiSQL](https://www.heidisql.com/) - Experimental (but, Excellent for MySQL)
 - [Navicat](https://www.navicat.com/) - Commercial
+- [SqlMap - SQL Injection](https://github.com/sqlmapproject/sqlmap)
