@@ -46,3 +46,54 @@ SET @sql = CONCAT('SELECT R.user_id, ', @sql, '
 
 PREPARE stmt FROM @sql;
 EXECUTE stmt;
+
+-- MySQL Table Space Usage and Extension
+-- InnoDB system tablespace 
+select FILE_NAME, TABLESPACE_NAME, TABLE_NAME, ENGINE, INDEX_LENGTH, TOTAL_EXTENTS, EXTENT_SIZE 
+from INFORMATION_SCHEMA.FILES 
+where file_name 
+like '%ibdata%'; 
+
+-- InnoDB temporary tablespace 
+select FILE_NAME, TABLESPACE_NAME, TABLE_NAME, ENGINE, INDEX_LENGTH, TOTAL_EXTENTS, EXTENT_SIZE 
+from INFORMATION_SCHEMA.FILES 
+where file_name 
+like '%ibtmp%'; 
+
+-- Database Space Usage Report 
+SELECT s.schema_name, IFNULL(ROUND((SUM(t.data_length)+SUM(t.index_length))/1024/1024,2),0.00) total_size 
+FROM INFORMATION_SCHEMA.SCHEMATA s, INFORMATION_SCHEMA.TABLES t 
+WHERE s.schema_name = t.table_schema 
+GROUP BY s.schema_name 
+ORDER BY total_size DESC; 
+
+-- Database Space Usage Report (data_used, data_free and pct_used)
+SELECT s.schema_name,
+CONCAT(IFNULL(ROUND((SUM(t.data_length)+SUM(t.index_length))/1024/1024,2),0.00),"Mb") total_size,
+CONCAT(IFNULL(ROUND(((SUM(t.data_length)+SUM(t.index_length))-SUM(t.data_free))/1024/1024,2),0.00),"Mb") data_used,
+CONCAT(IFNULL(ROUND(SUM(data_free)/1024/1024,2),0.00),"Mb") data_free,
+IFNULL(ROUND((((SUM(t.data_length)+SUM(t.index_length))-SUM(t.data_free))/((SUM(t.data_length)+SUM(t.index_length)))*100),2),0) pct_used
+FROM INFORMATION_SCHEMA.SCHEMATA s, INFORMATION_SCHEMA.TABLES t
+WHERE s.schema_name = t.table_schema
+GROUP BY s.schema_name
+ORDER BY total_size DESC;
+
+-- Table Space Usage Report
+SELECT s.schema_name, table_name,
+CONCAT(IFNULL(ROUND((SUM(t.data_length)+SUM(t.index_length))/1024/1024,2),0.00),"Mb") total_size,
+CONCAT(IFNULL(ROUND(((SUM(t.data_length)+SUM(t.index_length))-SUM(t.data_free))/1024/1024,2),0.00),"Mb") data_used,
+CONCAT(IFNULL(ROUND(SUM(data_free)/1024/1024,2),0.00),"Mb") data_free,
+IFNULL(ROUND((((SUM(t.data_length)+SUM(t.index_length))-SUM(t.data_free))/((SUM(t.data_length)+SUM(t.index_length)))*100),2),0) pct_used
+FROM INFORMATION_SCHEMA.SCHEMATA s, INFORMATION_SCHEMA.TABLES t
+WHERE s.schema_name = t.table_schema
+GROUP BY s.schema_name, table_name
+ORDER BY total_size DESC;
+
+-- Check for Tables that have Free Space
+SELECT s.schema_name, table_name,
+IFNULL(ROUND(SUM(data_free)/1024,2),0.00) data_free
+FROM INFORMATION_SCHEMA.SCHEMATA s, INFORMATION_SCHEMA.TABLES t
+WHERE s.schema_name = t.table_schema
+GROUP BY s.schema_name, table_name
+HAVING data_free > 100
+ORDER BY data_free DESC;
