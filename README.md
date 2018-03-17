@@ -15,6 +15,7 @@
 - [PostgreSql Database Video Tutorials](https://www.youtube.com/playlist?list=PLFRIKEguV54bgwAcgFiOs5GMo3q2DhVDj) (2014.06.03)
 
 ## Tuning
+- [Testing the Fastest Way to Import a Table into MySQL (and some interesting 5.7 performance results)](https://dbahire.com/testing-the-fastest-way-to-import-a-table-into-mysql-and-some-interesting-5-7-performance-results/)
 - [17 Key MySQL Config File Settings (MySQL 5.7 Proof)](http://www.speedemy.com/17-key-mysql-config-file-settings-mysql-5-7-proof/)
 - [MySQL Configuration Tuning Handbook](http://www.speedemy.com/mysql-configuration-tuning-handbook/)
 - [AWS RDS MySQL parameter group tweaks](https://gist.github.com/magnetikonline/01d9542a4d9e90472839) (2014.05)
