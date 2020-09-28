@@ -5,6 +5,10 @@
 - [New Features in MySQL 5.7 (2015)](http://fiercesw.com/wp-content/uploads/2016/01/Whats-New-in-MySQL-5.7-1.pdf), ([Video](https://www.youtube.com/watch?v=dR2Uo97MQW8))
 - [PostgreSQL 9.6 New Features With Examples](https://community.hpe.com/hpeb/attachments/hpeb/JapanEnterpriseTopics/198/1/PostgreSQL%209.6%20New%20Features%20en%2020160606-1.pdf)
 
+## Articles
+- [Simple Anomaly Detection Using Plain SQL](https://hakibenita.com/sql-anomaly-detection)
+- [MySQL 내부구조](https://brunch.co.kr/@jehovah/21)
+
 ## Talks
 - [MySQL Performance Tuning: Part 1. Configuration (Cover MySQL 5.7) (2016)](https://www.youtube.com/watch?v=0CqMv0ucqFA)
 - Advanced MySQL Slow Query Logging (2016) ([1](https://www.youtube.com/watch?v=noFn2sgQiNw), [2](https://www.youtube.com/watch?v=INovio_FuTU), [3](https://www.youtube.com/watch?v=f6fiy_dVYxw)
