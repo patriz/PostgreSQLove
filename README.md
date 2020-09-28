@@ -7,6 +7,8 @@
 
 ## Articles
 - [Simple Anomaly Detection Using Plain SQL](https://hakibenita.com/sql-anomaly-detection)
+- [Automating MySQL schema migrations with GitHub Actions and more
+](https://github.blog/2020-02-14-automating-mysql-schema-migrations-with-github-actions-and-more/)
 - [MySQL 내부구조](https://brunch.co.kr/@jehovah/21)
 
 ## Talks
@@ -28,9 +30,6 @@
 - [How to Optimize MySQL Tables and Defragment to Recover Space](https://www.thegeekstuff.com/2016/04/mysql-optimize-table/)
 - [How to Optimize MySQL: Indexes, Slow Queries, Configuration](https://www.sitepoint.com/optimize-mysql-indexes-slow-queries-configuration/)
 
-## Links
-- http://sqlzoo.net/
-
 ## Tips
 - [20 Tips and Tricks Any MySQL Database Developer Should Consider (2013)](https://onextrapixel.com/20-tips-and-tricks-any-mysql-database-developer-should-consider/)
 - [Top 20+ MySQL Best Practices (2009)](https://code.tutsplus.com/tutorials/top-20-mysql-best-practices--net-7855)
@@ -39,6 +38,7 @@
 - [High Performance MySQL: Optimization, Backups, and Replication 3rd Edition](https://www.amazon.com/High-Performance-MySQL-Optimization-Replication/dp/1449314287)
 
 ## Clients & Tools
+- [OctoSQL](https://github.com/cube2222/octosql)
 - [SQLCheck](https://github.com/jarulraj/sqlcheck)
 - pgAdmin [3](https://www.postgresql.org/ftp/pgadmin3/), [4](https://www.pgadmin.org/)
 - [postico](https://eggerapps.at/postico/) - Excellent! (Mac only)
@@ -47,3 +47,7 @@
 - [HeidiSQL](https://www.heidisql.com/) - Experimental (but, Excellent for MySQL)
 - [Navicat](https://www.navicat.com/) - Commercial
 - [SqlMap - SQL Injection](https://github.com/sqlmapproject/sqlmap)
+
+## Links
+- http://sqlzoo.net/
+- https://hakibenita.com/
